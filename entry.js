@@ -1,1 +1,1 @@
-document.write('Hello World');
+var app = require('./app.js');
