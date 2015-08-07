@@ -21,11 +21,21 @@ module.exports =
       { test: /\.js$/,   loader: 'babel' }
     ]
   plugins: [
-    new HtmlWebpackPlugin(title: 'Webpack, React & Dragula')
+    new HtmlWebpackPlugin(title: 'Webpack, React & Dragula'),
+    new webpack.ResolverPlugin([
+        new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(
+          "package.json", ["main"]
+        ),
+        new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(
+          "bower.json", ["main"]
+        )
+    ])
   ]
-  resolve: extensions: [
-    ''
-    '.scss'
-    '.js'
-    '.jsx'
-  ]
+  resolve:
+    root: [ path.join(__dirname, 'bower_components') ]
+    extensions: [
+      ''
+      '.scss'
+      '.js'
+      '.jsx'
+    ]

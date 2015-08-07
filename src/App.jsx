@@ -23,7 +23,7 @@ export default class App extends Component {
       });
 
     return (
-      <div className="content">
+      <div className="container">
         <h1>Webpack, React & Dragula</h1>
         <div id="first-col">
           {cards}

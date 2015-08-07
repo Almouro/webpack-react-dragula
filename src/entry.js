@@ -1,3 +1,4 @@
+import 'skeleton';
 import './styles/app';
 import 'dragula/dist/dragula.min.css';
 
