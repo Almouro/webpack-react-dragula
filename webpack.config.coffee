@@ -16,4 +16,6 @@ module.exports =
     loaders: [
       { test: /\.scss$/, loader: 'style!css!sass' }
       { test: /\.css$/,  loader: 'style!css' }
+      { test: /\.jsx$/,  loader: 'react-hot!babel' }
+      { test: /\.js$/,   loader: 'babel' }
     ]

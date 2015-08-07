@@ -1,3 +1,6 @@
-require('./styles/app.scss');
+import './styles/app.scss';
 
-var app = require('./app.js');
+import React from 'react';
+import App from './App.jsx';
+
+React.render(<App />, document.getElementsByTagName('body')[0]);
