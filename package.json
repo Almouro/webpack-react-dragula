@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bower install",
     "build": "node_modules/.bin/webpack",
     "start": "node node_modules/.bin/webpack-dev-server --content-base www/ --hot"
   },
@@ -11,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/Almouro/webpack-react-dragula.git"
   },
-  "keywords": ["tutorial", "webpack", "react", "dragula"],
+  "keywords": [
+    "tutorial",
+    "webpack",
+    "react",
+    "dragula"
+  ],
   "author": "Almouro <contact@almouro.com>",
   "license": "MIT",
   "bugs": {
@@ -30,6 +36,7 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
+    "bower": "^1.7.1",
     "dragula": "^2.1.2",
     "material-ui": "^0.10.2"
   }

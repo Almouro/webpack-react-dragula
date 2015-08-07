@@ -1,0 +1,19 @@
+{
+  "name": "webpack-react-dragula",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Almouro/webpack-react-dragula",
+  "authors": [
+    "Almouro <contact@almouro.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4"
+  }
+}
