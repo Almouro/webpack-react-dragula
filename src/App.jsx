@@ -8,18 +8,24 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 //https://github.com/zilverline/react-tap-event-plugin
 injectTapEventPlugin();
 
-import AwesomeCard from './AwesomeCard.jsx';
+import AwesomeCard from './AwesomeCard';
+import data from './data';
 
 export default class App extends Component {
   render() {
+    var cards = data.map(function(cardData, i){
+        return <AwesomeCard
+          key={i}
+          title={cardData.title}
+          subtitle={cardData.subtitle}
+          text={cardData.text}
+          />;
+      });
+
     return (
       <div className="content">
         <h1>Webpack, React & Dragula</h1>
-        <AwesomeCard
-          title="title"
-          subtitle="subtitle"
-          text="text"
-          />
+        {cards}
       </div>
     );
   }
