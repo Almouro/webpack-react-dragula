@@ -12,3 +12,8 @@ module.exports =
   output:
     path: paths.output
     filename: 'bundle.js'
+  module:
+    loaders: [
+      { test: /\.scss$/, loader: 'style!css!sass' }
+      { test: /\.css$/,  loader: 'style!css' }
+    ]

@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Almouro/webpack-react-dragula#readme",
   "devDependencies": {
     "coffee-script": "^1.9.3",
+    "css-loader": "^0.15.6",
+    "sass-loader": "^2.0.0",
+    "style-loader": "^0.12.3",
     "webpack": "^1.11.0"
   }
 }
