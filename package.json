@@ -1,0 +1,23 @@
+{
+  "name": "webpack-react-dragula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack entry.js bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Almouro/webpack-react-dragula.git"
+  },
+  "keywords": ["tutorial", "webpack", "react", "dragula"],
+  "author": "Almouro <contact@almouro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Almouro/webpack-react-dragula/issues"
+  },
+  "homepage": "https://github.com/Almouro/webpack-react-dragula#readme",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
