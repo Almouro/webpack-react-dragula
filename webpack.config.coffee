@@ -1,5 +1,6 @@
 webpack = require('webpack')
 path = require('path')
+HtmlWebpackPlugin = require('html-webpack-plugin')
 
 paths =
   src: path.join __dirname, '/src'
@@ -19,3 +20,6 @@ module.exports =
       { test: /\.jsx$/,  loader: 'react-hot!babel' }
       { test: /\.js$/,   loader: 'babel' }
     ]
+  plugins: [
+    new HtmlWebpackPlugin(title: 'Webpack, React & Dragula')
+  ]
