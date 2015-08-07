@@ -23,3 +23,9 @@ module.exports =
   plugins: [
     new HtmlWebpackPlugin(title: 'Webpack, React & Dragula')
   ]
+  resolve: extensions: [
+    ''
+    '.scss'
+    '.js'
+    '.jsx'
+  ]
