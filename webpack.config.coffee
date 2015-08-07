@@ -9,7 +9,7 @@ paths =
 module.exports =
   context: paths.src
   entry:
-    app: ['./entry.js']
+    app: ['./entry.js', 'webpack/hot/dev-server']
   output:
     path: paths.output
     filename: 'bundle.js'
